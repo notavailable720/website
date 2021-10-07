@@ -1,0 +1,131 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer img{
+    padding: 40px;
+}
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.header .menu a {
+    padding: 10px
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+a:link {
+    color: rgba(25, 0, 255, 1);
+}
+
+a:hover {
+    color: red;
+}
+
+.item {
+    position: relative;
+    padding: 30px;
+}
+
+.item p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+}
+
+.item:hover p{
+    animation: fadeIn 2s 1;
+}
+
+#car p {
+    top: 60%
+}
+
+#bird p {
+    top: 50%
+}
+#trex p {
+    top: 80%
+}
+
+@keyframes mymove{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 10%;
+    }
+
+    20% {
+        opacity: 20%;
+    }
+
+    30% {
+        opacity: 30%;
+    }
+
+    40% {
+        opacity: 40%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    60% {
+        opacity: 60%;
+    }
+
+    70% {
+        opacity: 70%;
+    }
+    
+    80% {
+        opacity: 80%;
+    }
+
+    90% {
+        opacity: 90%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.header h1 {
+    position: relative;
+    animation: mymove 10s infinite;
+    animation-direction: alternate;
+}
